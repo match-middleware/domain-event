@@ -31,7 +31,9 @@ public abstract class ChannelProvider<T extends ChannelConfig> {
 
     public void sendMessage(String eventName, Object data){
         EventPublish eventPublish = createEventPublish();
-        eventPublish.setMessageData(MessageData.createMessageData(data));
+        MessageData messageData = MessageData.createMessageData(data);
+        eventPublish.setMessageData(messageData);
+        this.type = messageData.getMessageType();
         eventPublish.setEventName(eventName);
         eventPublish.publishMessage();
     }
