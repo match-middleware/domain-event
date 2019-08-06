@@ -1,12 +1,10 @@
 package com.github.middleware;
 
 
-import com.github.middleware.event.EventHandler;
 import com.github.middleware.channel.ChannelProvider;
 import com.github.middleware.config.EventConfigItem;
 import com.github.middleware.config.EventConfigManager;
-
-import java.io.Serializable;
+import com.github.middleware.event.EventHandler;
 
 /**
  * @author: zhangchao
@@ -14,7 +12,7 @@ import java.io.Serializable;
  **/
 public class Stream {
 
-    public static void publish(String eventName, Serializable object){
+    public static void publish(String eventName, Object object){
         EventConfigItem eventConfigItem = EventConfigManager.get(eventName);
         ChannelProvider channelProvider = eventConfigItem.getChannelProvider();
         channelProvider.sendMessage(eventName,object);

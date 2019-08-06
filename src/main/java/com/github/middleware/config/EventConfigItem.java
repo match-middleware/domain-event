@@ -1,6 +1,7 @@
 package com.github.middleware.config;
 
 import com.github.middleware.channel.ChannelProvider;
+import com.github.middleware.message.MessageType;
 
 /**
  * @author: zhangchao
@@ -10,6 +11,7 @@ public class EventConfigItem {
 
     private ChannelProvider channelProvider;
     private String eventName;
+    private MessageType messageType;
 
     public ChannelProvider getChannelProvider() {
         return channelProvider;
@@ -25,5 +27,13 @@ public class EventConfigItem {
 
     public void setEventName(String eventName) {
         this.eventName = eventName;
+    }
+
+    public MessageType getMessageType() {
+        return messageType;
+    }
+
+    public void setMessageType(MessageType messageType) {
+        this.messageType = messageType;
     }
 }

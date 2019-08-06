@@ -7,7 +7,6 @@ import com.github.middleware.event.EventSubscriber;
 import com.github.middleware.message.MessageData;
 import com.github.middleware.message.MessageType;
 
-import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -29,7 +28,6 @@ public abstract class ChannelProvider<T extends ChannelConfig> {
     }
 
     public Set<EventSubscriber> subscriberSet = new HashSet<>();
-
 
     public void sendMessage(String eventName, Object data){
         EventPublish eventPublish = createEventPublish();
