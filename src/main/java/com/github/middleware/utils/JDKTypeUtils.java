@@ -1,8 +1,5 @@
 package com.github.middleware.utils;
 
-import com.github.middleware.event.EventStreamObject;
-import com.github.middleware.message.MessageType;
-
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 
@@ -73,5 +70,17 @@ public class JDKTypeUtils {
         }
         return null;
     }
+
+
+    public static Class<?> getParentClassObjectClass(Class clazz) {
+        Type genericSuperclass = clazz.getGenericSuperclass();
+        if (genericSuperclass instanceof ParameterizedType) {
+            Type[] actualTypeArguments = ((ParameterizedType) genericSuperclass).getActualTypeArguments();
+            Type actualTypeArgument = actualTypeArguments[0];
+            return (Class<?>) actualTypeArgument;
+        }
+        return null;
+    }
+
 }
 

@@ -1,10 +1,9 @@
 package com.github.middleware.message;
 
 import com.github.middleware.annotation.SubscribeType;
-import com.github.middleware.event.EventStreamObject;
 import com.github.middleware.utils.GsonUtils;
 
-import java.lang.reflect.Type;
+import java.util.Date;
 import java.util.UUID;
 
 /**
@@ -15,6 +14,7 @@ public class MessageData{
 
     private String messageId;
     private MessageType messageType;
+    private Date sendTime;
     private String data;
 
     public MessageData() {
@@ -24,6 +24,7 @@ public class MessageData{
     public static MessageData createMessageData(Object data){
         MessageData messageData = new MessageData();
         messageData.setData(GsonUtils.toJsonString(data));
+        messageData.setSendTime(new Date());
         messageData.setMessageType(findMessageType(data.getClass()));
         messageData.setMessageId(UUID.randomUUID().toString());
         return messageData;
@@ -31,18 +32,20 @@ public class MessageData{
 
 
     private static  MessageType findMessageType(Object data){
-        MessageType messageType = MessageType.P2M;
-        SubscribeType annotation = data.getClass().getAnnotation(SubscribeType.class);
+        MessageType messageType = MessageType.getDefault();
+        SubscribeType annotation = (SubscribeType)((Class) data).getAnnotation(SubscribeType.class);
         if(annotation != null){
             return annotation.type();
         }
-        Type[] types = data.getClass().getInterfaces();
-        for (Type type : types) {
-            if(type.getTypeName().equals(EventStreamObject.class.getTypeName())){
-                return ((EventStreamObject)data).getMessageType();
-            }
-        }
         return messageType;
+    }
+
+    public Date getSendTime() {
+        return sendTime;
+    }
+
+    public void setSendTime(Date sendTime) {
+        this.sendTime = sendTime;
     }
 
     public String getMessageId() {

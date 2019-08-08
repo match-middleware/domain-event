@@ -6,6 +6,9 @@ package com.github.middleware.message;
  * @Version v1.0
  */
 public enum  MessageType {
-    P2P,//点对点
-    P2M//点对多
+    PRODUCERS_AND_CONSUMERS,//生产者和消费者
+    PUBLISH_SUBSCRIBE; // 发布订阅
+
+
+    public static MessageType getDefault(){return MessageType.PUBLISH_SUBSCRIBE;}
 }

@@ -8,7 +8,7 @@ import java.util.Properties;
  * @time: 2018-12-25 14:59
  **/
 public abstract class ChannelConfig {
-    private static final String DEFAULT_NAMESPANCE = "default-stream-";
+    private static final String DEFAULT_NAMESPANCE = "DEFAULT_STREAM";
     private Properties properties;
     private String namespance;
 

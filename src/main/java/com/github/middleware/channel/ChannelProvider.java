@@ -6,6 +6,7 @@ import com.github.middleware.event.EventPublish;
 import com.github.middleware.event.EventSubscriber;
 import com.github.middleware.message.MessageData;
 import com.github.middleware.message.MessageType;
+import com.github.middleware.utils.SubscribeTypeUtils;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -42,8 +43,8 @@ public abstract class ChannelProvider<T extends ChannelConfig> {
     public void subscriber(EventHandler eventHandler){
         EventSubscriber eventSubscriber = createEventSubscriber();
         eventSubscriber.setEventHandler(eventHandler);
-        SubscribeType annotation = eventHandler.getClass().getAnnotation(SubscribeType.class);
-        type = MessageType.P2M;
+        SubscribeType annotation = SubscribeTypeUtils.findSubScribeType(eventHandler.getClass());
+        type = MessageType.getDefault();
         if(annotation != null){
             type = annotation.type();
         }
@@ -73,4 +74,7 @@ public abstract class ChannelProvider<T extends ChannelConfig> {
     public void setChannelConfig(T channelConfig) {
         this.channelConfig = channelConfig;
     }
+
+
+
 }
