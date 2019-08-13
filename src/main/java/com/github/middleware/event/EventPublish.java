@@ -9,7 +9,7 @@ import com.github.middleware.message.MessageData;
  **/
 public abstract class EventPublish {
 
-    private String  eventName;
+    private String eventName;
 
     private MessageData messageData;
 

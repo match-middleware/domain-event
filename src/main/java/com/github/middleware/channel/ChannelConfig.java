@@ -10,7 +10,7 @@ import java.util.Properties;
 public abstract class ChannelConfig {
     private static final String DEFAULT_NAMESPANCE = "DEFAULT_STREAM";
     private Properties properties;
-    private String namespance;
+    private String applicationId;
 
     public ChannelConfig(Properties properties) {
         this.properties = properties;
@@ -24,14 +24,15 @@ public abstract class ChannelConfig {
         this.properties = properties;
     }
 
-    public String getNamespance() {
-        if(namespance == null){
-            namespance = DEFAULT_NAMESPANCE;
+
+    public String getApplicationId() {
+        if(this.applicationId == null || "".equals(applicationId)){
+            this.applicationId = DEFAULT_NAMESPANCE;
         }
-        return namespance;
+        return applicationId;
     }
 
-    public void setNamespance(String namespance) {
-        this.namespance = namespance;
+    public void setApplicationId(String applicationId) {
+        this.applicationId = applicationId;
     }
 }

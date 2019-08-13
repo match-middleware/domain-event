@@ -9,7 +9,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * @author: zhangchao
  * @time: 2018-12-21 11:06
  **/
-public class EventConfigManager {
+public abstract class EventConfigManager {
 
     private static Map<String,EventConfigItem> subscriberItemConcurrentHashMap = new ConcurrentHashMap<String,EventConfigItem>();
 
