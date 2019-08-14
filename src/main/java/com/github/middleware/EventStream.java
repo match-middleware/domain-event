@@ -10,7 +10,10 @@ import com.github.middleware.event.EventHandler;
  * @author: zhangchao
  * @time: 2018-12-20 10:09
  **/
-public class Stream {
+public abstract class EventStream {
+
+    private EventStream() {
+    }
 
     public static void publish(String eventName, Object object){
         EventConfigItem eventConfigItem = EventConfigManager.get(eventName);
