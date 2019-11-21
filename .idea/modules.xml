@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/domain-event.iml" filepath="$PROJECT_DIR$/domain-event.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../domain-event-plugins/domain-event-activemq/domain-event-activemq.iml" filepath="$PROJECT_DIR$/../domain-event-plugins/domain-event-activemq/domain-event-activemq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../domain-event-plugins/domain-event-kafka/domain-event-kafka.iml" filepath="$PROJECT_DIR$/../domain-event-plugins/domain-event-kafka/domain-event-kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../domain-event-plugins/domain-event-plugin.iml" filepath="$PROJECT_DIR$/../domain-event-plugins/domain-event-plugin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../domain-event-plugins/domain-event-redis/domain-event-redis.iml" filepath="$PROJECT_DIR$/../domain-event-plugins/domain-event-redis/domain-event-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../domain-event-plugins/domain-event-springboot-starter/domain-event-springboot-starter.iml" filepath="$PROJECT_DIR$/../domain-event-plugins/domain-event-springboot-starter/domain-event-springboot-starter.iml" />
+    </modules>
+  </component>
+</project>
