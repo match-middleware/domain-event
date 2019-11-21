@@ -1,7 +1,7 @@
-package com.github.middleware.channel.def;
+package com.github.domainevent.channel.local;
 
-import com.github.middleware.event.EventPublish;
-import com.github.middleware.utils.GsonUtils;
+import com.github.domainevent.event.EventPublish;
+import com.github.domainevent.utils.GsonUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

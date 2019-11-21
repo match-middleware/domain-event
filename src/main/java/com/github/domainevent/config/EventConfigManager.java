@@ -1,6 +1,6 @@
-package com.github.middleware.config;
+package com.github.domainevent.config;
 
-import com.github.middleware.channel.def.DefaultChannelProvider;
+import com.github.domainevent.channel.local.DefaultChannelProvider;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

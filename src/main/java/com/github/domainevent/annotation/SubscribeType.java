@@ -1,7 +1,7 @@
-package com.github.middleware.annotation;
+package com.github.domainevent.annotation;
 
 
-import com.github.middleware.message.MessageType;
+import com.github.domainevent.message.MessageType;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;

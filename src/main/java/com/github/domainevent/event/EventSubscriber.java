@@ -1,9 +1,6 @@
-package com.github.middleware.event;
+package com.github.domainevent.event;
 
-import com.github.middleware.message.MessageType;
-
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
+import com.github.domainevent.message.MessageType;
 
 public abstract class EventSubscriber {
 

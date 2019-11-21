@@ -1,4 +1,4 @@
-package com.github.middleware.utils;
+package com.github.domainevent.utils;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

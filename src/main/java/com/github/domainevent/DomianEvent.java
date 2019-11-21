@@ -1,18 +1,18 @@
-package com.github.middleware;
+package com.github.domainevent;
 
 
-import com.github.middleware.channel.ChannelProvider;
-import com.github.middleware.config.EventConfigItem;
-import com.github.middleware.config.EventConfigManager;
-import com.github.middleware.event.EventHandler;
+import com.github.domainevent.channel.ChannelProvider;
+import com.github.domainevent.config.EventConfigItem;
+import com.github.domainevent.config.EventConfigManager;
+import com.github.domainevent.event.EventHandler;
 
 /**
  * @author: zhangchao
  * @time: 2018-12-20 10:09
  **/
-public abstract class EventStream {
+public abstract class DomianEvent {
 
-    private EventStream() {
+    private DomianEvent() {
     }
 
     public static void publish(String eventName, Object object){

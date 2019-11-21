@@ -1,7 +1,7 @@
-package com.github.middleware.config;
+package com.github.domainevent.config;
 
-import com.github.middleware.channel.ChannelProvider;
-import com.github.middleware.message.MessageType;
+import com.github.domainevent.channel.ChannelProvider;
+import com.github.domainevent.message.MessageType;
 
 /**
  * @author: zhangchao

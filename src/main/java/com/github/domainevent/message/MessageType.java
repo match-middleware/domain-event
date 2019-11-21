@@ -1,4 +1,4 @@
-package com.github.middleware.message;
+package com.github.domainevent.message;
 
 /**
  * @Author zhangchao
@@ -8,7 +8,5 @@ package com.github.middleware.message;
 public enum  MessageType {
     PRODUCERS_AND_CONSUMERS,//生产者和消费者
     PUBLISH_SUBSCRIBE; // 发布订阅
-
-
     public static MessageType getDefault(){return MessageType.PUBLISH_SUBSCRIBE;}
 }

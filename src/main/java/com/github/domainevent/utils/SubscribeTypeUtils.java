@@ -1,6 +1,6 @@
-package com.github.middleware.utils;
+package com.github.domainevent.utils;
 
-import com.github.middleware.annotation.SubscribeType;
+import com.github.domainevent.annotation.SubscribeType;
 
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;

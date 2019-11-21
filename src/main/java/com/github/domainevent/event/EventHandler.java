@@ -1,4 +1,4 @@
-package com.github.middleware.event;
+package com.github.domainevent.event;
 
 import java.io.Serializable;
 

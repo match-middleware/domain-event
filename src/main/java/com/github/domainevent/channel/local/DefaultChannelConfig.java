@@ -1,6 +1,6 @@
-package com.github.middleware.channel.def;
+package com.github.domainevent.channel.local;
 
-import com.github.middleware.channel.ChannelConfig;
+import com.github.domainevent.channel.ChannelConfig;
 
 import java.util.Properties;
 

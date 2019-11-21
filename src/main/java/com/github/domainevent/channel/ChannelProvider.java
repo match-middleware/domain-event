@@ -1,12 +1,12 @@
-package com.github.middleware.channel;
+package com.github.domainevent.channel;
 
-import com.github.middleware.annotation.SubscribeType;
-import com.github.middleware.event.EventHandler;
-import com.github.middleware.event.EventPublish;
-import com.github.middleware.event.EventSubscriber;
-import com.github.middleware.message.MessageData;
-import com.github.middleware.message.MessageType;
-import com.github.middleware.utils.SubscribeTypeUtils;
+import com.github.domainevent.annotation.SubscribeType;
+import com.github.domainevent.event.EventHandler;
+import com.github.domainevent.event.EventPublish;
+import com.github.domainevent.event.EventSubscriber;
+import com.github.domainevent.message.MessageData;
+import com.github.domainevent.message.MessageType;
+import com.github.domainevent.utils.SubscribeTypeUtils;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,7 +1,7 @@
-package com.github.middleware.channel.def;
+package com.github.domainevent.channel.local;
 
-import com.github.middleware.event.EventSubscriber;
-import com.github.middleware.message.MessageType;
+import com.github.domainevent.event.EventSubscriber;
+import com.github.domainevent.message.MessageType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

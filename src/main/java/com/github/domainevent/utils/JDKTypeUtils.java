@@ -1,4 +1,4 @@
-package com.github.middleware.utils;
+package com.github.domainevent.utils;
 
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;

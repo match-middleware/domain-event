@@ -1,6 +1,6 @@
-package com.github.middleware.channel.def;
+package com.github.domainevent.channel.local;
 
-import com.github.middleware.message.MessageData;
+import com.github.domainevent.message.MessageData;
 
 import java.util.*;
 import java.util.concurrent.LinkedBlockingQueue;

@@ -1,7 +1,7 @@
-package com.github.middleware.message;
+package com.github.domainevent.message;
 
-import com.github.middleware.annotation.SubscribeType;
-import com.github.middleware.utils.GsonUtils;
+import com.github.domainevent.annotation.SubscribeType;
+import com.github.domainevent.utils.GsonUtils;
 
 import java.util.Date;
 import java.util.UUID;

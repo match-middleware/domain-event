@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.middleware</groupId>
-    <artifactId>event-stream</artifactId>
+    <artifactId>domain-event</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
@@ -19,8 +19,8 @@
     </licenses>
 
     <scm>
-        <url>https://github.com/match-middleware/event-stream</url>
-        <connection>https://github.com/match-middleware/event-stream.git</connection>
+        <url>https://github.com:match-middleware/domain-event</url>
+        <connection>https://github.com:match-middleware/domain-event.git</connection>
     </scm>
 
 

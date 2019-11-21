@@ -1,5 +1,5 @@
 
-package com.github.middleware.channel;
+package com.github.domainevent.channel;
 
 import java.util.Properties;
 
@@ -8,7 +8,7 @@ import java.util.Properties;
  * @time: 2018-12-25 14:59
  **/
 public abstract class ChannelConfig {
-    private static final String DEFAULT_NAMESPANCE = "DEFAULT_STREAM";
+    private static final String DEFAULT_NAMESPANCE = "DEFAULT_CHANNEL";
     private Properties properties;
     private String applicationId;
 
